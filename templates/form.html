@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+      <title>AgriEdge</title>
+   </head>
+
+   <body>
+   <div class="login-page">
+   <div class="form">
+      <div id="wrap">
+       <h1 style="color:Tomato;">  {{result}}</h1>
+      <h1>AgriEdge</h1>
+
+      <section id="furn" class="frame2">
+
+         <div class="login">
+
+            <form action="{{ url_for('classify')}}"method="post">
+            <table class="entryForm">
+            <tr><th>Annee : </th><td><input type="text" name="Annee" placeholder="Annee"></td></tr>
+            <tr><th>ID : </th><td><input type="text" name="ID" placeholder="ID"></td></tr>
+            <tr><th>Var1 : </th><td><input type="text" name="Var1" placeholder="var1"></td></tr>
+            <tr><th>Var3 : </th><td><input type="text" name="Var3" placeholder="var3"></td></tr>
+            <tr><th>Var4 : </th><td><input type="text" name="Var4" placeholder="var4"></td></tr>
+            <tr><th>Var5</th><td><select id="Var5" name="Var5">
+               <option value="4.97">4.97</option>
+               <option value="1.77">1.77</option>
+            <tr><th>Var6</th><td><select id="Var6" name="Var6">
+               <option value="4.97">4.97</option>
+               <option value="1.77">1.77</option>
+               <option value="2.27">2.27</option>
+               <option value="1.595">1.595</option>
+            </table>
+               <button type="reset" class="btn btn-clear">Reset</button><br><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+
+         </div>
+         </div></div>
+      </section>
+
+
+      <br>
+      <br>
+
+      </div>
+
+   </body>
+</html>
